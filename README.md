@@ -1,4 +1,5 @@
 # RunLoopCheckStandStillDemo
 
 runloop每次activity改变，则dispatch_semaphore_signal发信号
+
 异步线程里一直消费信号，有信号马上就消费掉，如果等待400ms还没有信号消费，则超时，说明卡顿
